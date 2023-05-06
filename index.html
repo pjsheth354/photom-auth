@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/favicon/favicon.ico" type="image/x-icon">
+    <title>Login Page</title>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-700 via-purple-900 to-pink-500">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-xl font-bold mb-4 text-center">PHOTOM TECHNOLOGIES <p>IOT DASHBOARD</p>
+            </h1>
+            <h2 class="text-xl font-bold mb-4">Log in to your account</h2>
+            <form id = "loginForm">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="username">Username</label>
+                    <input class="border rounded-lg py-2 px-3 w-full" type="text" id="username" name="username"
+                        placeholder="Enter your username" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="password">Password</label>
+                    <input class="border rounded-lg py-2 px-3 w-full" type="password" id="password" name="password"
+                        placeholder="Enter your password" required>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
+                    type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyBXiY8-AaObChaYQ33F4hLKVhAsFTopE0Y",
+            authDomain: "testing-c215b.firebaseapp.com",
+            databaseURL: "https://testing-c215b-default-rtdb.firebaseio.com",
+            projectId: "testing-c215b",
+            storageBucket: "testing-c215b.appspot.com",
+            messagingSenderId: "647929584546",
+            appId: "1:647929584546:web:a1502fec6fdeb0e02d30fb",
+            measurementId: "G-0M9DTFW5CP"
+        };
+        firebase.initializeApp(config);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true})
+    </script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/auth.js"></script>
+</body>
+
+</html>
