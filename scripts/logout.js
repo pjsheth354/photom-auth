@@ -3,7 +3,7 @@ logoutForm.addEventListener('click',(e) => {
     e.preventDefault();
     auth.signOut().then(()=>{
         console.log("User Signed Out Successfully");
-        location.href = "index.html"
+        window.location.href = "index.html"
     })
 })
 
@@ -14,7 +14,7 @@ auth.onAuthStateChanged((user) => {
         profile_email = user.email;
     }
     else{
-        location.href = "index.html"
+        window.location.href = "index.html"
     }
 })
 
