@@ -8,7 +8,6 @@
     <title>TPREL Dholera Parameter Page</title>
     <link rel="shortcut icon" href="./Images/favicon/favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="parameter.css">
 </head>
 
 <body>
@@ -18,7 +17,8 @@
                 <span class="ml-3 text-xl text-white">Photom Technologies - IOT Dashboard</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="cursor-pointer mr-5 text-white hover:text-gray-400" href="adminpage.html">Home</a>
+                <a class="cursor-pointer mr-5 text-white hover:text-gray-400"
+                    href="../Plant Page/tprel-dholera-plantpage.html">Home</a>
                 <button onclick="profilebtn()"
                     class="cursor-pointer mr-5 text-white hover:text-gray-400">Profile</button>
             </nav>
@@ -29,34 +29,35 @@
     </header>
     <!-- Sidebar -->
     <div class="flex h-screen bg-gray-100">
-        <div class="flex flex-col bg-black text-white text-xl py-4 h-full w-1/6 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400">
+        <div
+            class="flex flex-col bg-black text-white text-xl py-4 h-full w-1/6 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400">
             <div class="px-4 hover:bg-white hover:text-black text-left">Dashboard</div>
-            <nav class="flex flex-col flex-grow mt-4 px-6 text-left">
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-1</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-2</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-3</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-4</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-5</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-6</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-7</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-8</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-9</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-10</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-11</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-12</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-13</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-14</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-15</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-16</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-17</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-18</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-19</button>
-                <button class="px-4 py-2 hover:bg-white hover:text-black text-left">Robot-20</button>
-            </nav>
+            <div class="flex flex-col flex-grow mt-4 px-6 text-left">
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive('Robot-1')">Robot-1</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive('Robot-2')">Robot-2</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-3</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-4</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-5</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-6</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-7</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-8</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-9</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-10</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-11</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-12</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-13</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-14</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-15</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-16</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-17</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-18</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-19</button>
+                <button type="button" class="px-4 py-2 hover:bg-white hover:text-black text-left" onclick="dataRetrive()">Robot-20</button>
+            </div>
         </div>
         <div class="flex-grow p-8">
             <h1 class="text-2xl font-bold mb-4">TPREL-DHOLERA SOLAR PLANT DASHBOARD</h1>
-            <h2 class="font-bold mb-4">Machine Name : <span class="robotName">--</span></h2>
+            <h2 class="font-bold mb-4">Machine Name : <span id="RobotName">--</span></h2>
             <div class="grid grid-cols-3 gap-4 text-center">
                 <div class="bg-white p-4 rounded-lg shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="#f7c400"
@@ -66,15 +67,15 @@
                             d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z" />
                     </svg>
                     <h2 class="text-xl font-bold mb-2">Battery Voltage</h2>
-                    <p class="text-gray-600 text-2xl">--V</p>
+                    <p class="text-gray-600 text-2xl" id ="BatteryVoltage">--V</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
                     <svg class="m-auto" enable-background="new 0 0 50 50" height="130" id="Layer_1" version="1.1"
                         viewbox="0 0 50 50" width="130" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect fill="none" height="130" width="130" />
-                        <polyline fill="#f7c400" points="30,14 30,10   35,10 35,6 21,6 21,10 26,10 26,14 " stroke="white"
-                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                        <polyline fill="#f7c400" points="30,14 30,10   35,10 35,6 21,6 21,10 26,10 26,14 "
+                            stroke="white" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
                         <polyline fill="#f7c400" points="9,27 5,27 5,21   1,21 1,37 5,37 5,31 9,31 " stroke="white"
                             stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
                         <path
@@ -84,7 +85,7 @@
                         <polygon points="32,28 24,39 27,30 22,30 27,20 32,20 27,28 " />
                     </svg>
                     <h2 class="text-xl font-bold mb-2">Motor-1 Current</h2>
-                    <p class="text-gray-600 text-2xl">--A</p>
+                    <p class="text-gray-600 text-2xl" id ="Current1">--A</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="#f7c400"
@@ -93,15 +94,15 @@
                             d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2h-7z" />
                     </svg>
                     <h2 class="text-xl font-bold mb-2">Encoder Count</h2>
-                    <p class="text-gray-600 text-2xl">--Sec</p>
+                    <p class="text-gray-600 text-2xl" id ="EncoderCount">--Sec</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
                     <svg class="m-auto" enable-background="new 0 0 50 50" height="130" id="Layer_2" version="1.1"
                         viewbox="0 0 50 50" width="130" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect fill="none" height="130" width="130" />
-                        <polyline fill="#f7c400" points="30,14 30,10   35,10 35,6 21,6 21,10 26,10 26,14 " stroke="white"
-                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                        <polyline fill="#f7c400" points="30,14 30,10   35,10 35,6 21,6 21,10 26,10 26,14 "
+                            stroke="white" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
                         <polyline fill="#f7c400" points="9,27 5,27 5,21   1,21 1,37 5,37 5,31 9,31 " stroke="white"
                             stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
                         <path
@@ -111,24 +112,24 @@
                         <polygon points="32,28 24,39 27,30 22,30 27,20 32,20 27,28 " />
                     </svg>
                     <h2 class="text-xl font-bold mb-2">Motor-2 Current</h2>
-                    <p class="text-gray-600 text-2xl">--A</p>
+                    <p class="text-gray-600 text-2xl" id ="Current2">--A</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="#f7c400"
-                    class="bi bi-stopwatch-fill m-auto p-2" viewbox="0 0 16 16">
-                    <path
-                        d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z" />
-                </svg>
+                        class="bi bi-stopwatch-fill m-auto p-2" viewbox="0 0 16 16">
+                        <path
+                            d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z" />
+                    </svg>
                     <h2 class="text-xl font-bold mb-2">On/Off Time</h2>
-                    <p class="text-gray-600 text-2xl">--Sec</p>
+                    <p class="text-gray-600 text-2xl" id ="OnOffTime">--Sec</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-md">
                     <svg class="m-auto" enable-background="new 0 0 50 50" height="130" id="Layer_3" version="1.1"
                         viewbox="0 0 50 50" width="130" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect fill="none" height="130" width="130" />
-                        <polyline fill="#f7c400" points="30,14 30,10   35,10 35,6 21,6 21,10 26,10 26,14 " stroke="#f7c400"
-                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                        <polyline fill="#f7c400" points="30,14 30,10   35,10 35,6 21,6 21,10 26,10 26,14 "
+                            stroke="#f7c400" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
                         <polyline fill="#f7c400" points="9,27 5,27 5,21   1,21 1,37 5,37 5,31 9,31 " stroke="white"
                             stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
                         <path
@@ -138,7 +139,7 @@
                         <polygon points="32,28 24,39 27,30 22,30 27,20 32,20 27,28 " />
                     </svg>
                     <h2 class="text-xl font-bold mb-2">Motor-3 Current</h2>
-                    <p class="text-gray-600 text-2xl">--A</p>
+                    <p class="text-gray-600 text-2xl" id ="Current3">--A</p>
                 </div>
             </div>
         </div>
@@ -188,10 +189,9 @@
         </div>
     </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"></script>
     <script>
         var config = {
@@ -204,12 +204,14 @@
             appId: "1:647929584546:web:a1502fec6fdeb0e02d30fb",
             measurementId: "G-0M9DTFW5CP"
         };
+
         firebase.initializeApp(config);
         const auth = firebase.auth();
         const db = firebase.firestore();
         db.settings({timestampsInSnapshots: true})
     </script>
     <script src="/Parameter Page/parameter_logout.js"></script>
+    <script src="../scripts/dholera_auth.js"></script>
 </body>
 
 </html>

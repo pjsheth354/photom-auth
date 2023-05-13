@@ -8,7 +8,6 @@
     <title>TATA MI MY Parameter Page</title>
     <link rel="shortcut icon" href="./Images/favicon/favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="parameter.css">
 </head>
 
 <body>
@@ -18,7 +17,7 @@
                 <span class="ml-3 text-xl text-white">Photom Technologies - IOT Dashboard</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="cursor-pointer mr-5 text-white hover:text-gray-400" href="adminpage.html">Home</a>
+                <a class="cursor-pointer mr-5 text-white hover:text-gray-400" href="../Plant Page/tata-mi-my-plantpage.html">Home</a>
                 <button onclick="profilebtn()"
                     class="cursor-pointer mr-5 text-white hover:text-gray-400">Profile</button>
             </nav>
@@ -174,10 +173,9 @@
         </div>
     </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"></script>
     <script>
         var config = {
@@ -192,10 +190,10 @@
         };
         firebase.initializeApp(config);
         const auth = firebase.auth();
-        const db = firebase.firestore();
-        db.settings({timestampsInSnapshots: true})
+        const db = firebase.database();
     </script>
     <script src="/Parameter Page/parameter_logout.js"></script>
+    <script src="../scripts/tatamimy_auth.js"></script>
 </body>
 
 </html>
